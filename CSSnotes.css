@@ -1,0 +1,51 @@
+body {
+	font-family: American Typewriter;
+	color: #8787b0;
+	background-color: black;
+	font-size: 35px;
+}
+
+p {
+	color: ##bfbeed;
+}
+
+span {
+	background-color: deeppink;
+}
+
+h1 {
+	font-family: jellyfish;
+	font-size: 150px;
+	text-align: center;
+}
+
+h2 {
+	font-size: 50px;
+	color: #a969a2;
+}
+
+div {
+
+}
+
+.Int1 {
+	font-family: orange juice;
+	color: ##bfbeed;
+}
+
+.Int2 {
+	font-size: 30;
+	font-family: Menlo;
+	color: ##bfbeed;
+}
+
+.Int3 {
+
+	font-family: Cute Jellyfish;
+	color: ##bfbeed;
+}
+
+footer {
+
+	font-size: 15px;
+}
