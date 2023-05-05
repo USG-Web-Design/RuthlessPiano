@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>ummmmm</title>
+
+</head>
+
+
+<body>
+
+	<h1 id="workpls">Time right now:</h1>
+	<h2 id="plspls"></h2>
+
+	<button onclick="Now();">Time Right Now</button> <br>
+	<button onclick="Japan();"><img src="japan.jpeg" style="width: 300px; text-align: center;"></button>
+	<br>
+	<button onclick="Rome();"><img src="rome.jpeg" style="width: 300px; text-align: center;"></button>
+	<br>
+	<button onclick="HK();"><img src="hongkong.jpeg" style="width: 300px; text-align: center;"></button>
+	<br>
+
+</body>
+
+<script type="text/javascript">
+
+	var Hour = 11
+	var Min = 50
+	var Day = 5
+	var Month = 5
+
+	function Now(){
+
+		var nowHour = Hour;
+		var nowMin = Min;
+		var day = Day;
+		var month = Month;
+		document.getElementById("plspls").innerHTML = nowHour + ":" + nowMin + ", " + day + "-" + month;
+
+	}
+
+	function Japan(){
+
+		var nowHour = Hour + 16;
+		var nowMin = Min;
+		var day = Day;
+		var month = Month;
+
+		if (nowHour > 23){
+
+			nowHour = nowHour - 24;
+			day = day + 1;
+		}
+
+		document.getElementById("plspls").innerHTML = nowHour + ":" + nowMin + ", " + day + "-" + month;
+
+
+	}
+
+	function Rome(){
+
+		var nowHour = Hour + 9;
+		var nowMin = Min;
+		var day = Day;
+		var month = Month;
+
+		if (nowHour > 23){
+
+			nowHour = nowHour - 24;
+			day = day + 1;
+		}
+
+		document.getElementById("plspls").innerHTML = nowHour + ":" + nowMin + ", " + day + "-" + month;
+
+
+	}
+
+	function HK(){
+
+		var nowHour = Hour + 15;
+		var nowMin = Min;
+		var day = Day;
+		var month = Month;
+
+		if (nowHour > 23){
+
+			nowHour = nowHour - 24;
+			day = day + 1;
+		}
+
+		document.getElementById("plspls").innerHTML = nowHour + ":" + nowMin + ", " + day + "-" + month;
+
+
+	}
+
+
+	
+
+
+
+
+
+
+
+</script>
+</html>
