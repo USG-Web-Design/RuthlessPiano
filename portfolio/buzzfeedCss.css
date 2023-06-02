@@ -1,0 +1,259 @@
+
+
+/* This is the large header */
+h1 {
+
+	font-family: Autumn in November;
+	padding: 20px;
+	margin-right: 200px;
+	margin-left: 200px;
+	text-align: center;
+	letter-spacing: 6px;
+	font-size: 45px;
+
+}
+
+/* This sets the style, color, font, etc of the navigation bar */
+.navi{
+
+	
+	font-size: 40px;
+	margin-right : 8px;
+	margin-left: 0px;
+	padding : 13px;
+	font-family: Apricot;
+	position: fixed;
+
+
+}
+
+/* This sets the style of the text in the
+ navigation bar, since they're all anchors*/
+.navi a{
+
+	color: black;
+	text-decoration: none;
+	padding: 8.2%;
+	text-align: center;
+
+}
+
+
+/* This sets the length of the borders of the table that makes up the
+navigation bar*/
+.nav{
+	border: none;
+	border-color: antiquewhite;
+	width: 700px;
+	height: 40px;
+	font-size: 30px;
+	padding: none;
+	margin: none;
+	color: black;
+}
+
+/* The only purpose of this is to set the background to a image */
+.buzz{
+	background-image: url("pixel.png");
+	background-size: 100%
+}
+
+.cite{
+	background-image: url("cite.png");
+	background-size: 100%
+}
+
+
+.animate-charcter
+{
+	/*i had to use background image because if i used background color it 
+	just wouldnt' show up
+
+	The colors are what is cycled through and the degree is how the colors
+	are being moved (left right bc its at 90 deg*/
+	background-image: linear-gradient(
+    90deg,
+    #9d0208 0%,
+    #dc2f02 29%,
+    #f48c06 67%,
+    #ffba08 100%);
+
+	background-size: 100%;
+	background-clip: border-box;
+	background-size: 200%;
+	/*I had to google this many times, but, with my testing,
+	if you dont use webkit it wouldn't clip properly. So i
+	used it for both background clip and text fill color*/
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: bloo linear;
+	animation-duration: 3s;
+	animation-iteration-count: 10000;
+	font-size: 70px;
+	display: center;
+
+}
+
+@keyframes bloo {
+  to {
+  	/*it's at 200 because it looks better that way.
+  	at 100, you barely notice the gradient
+
+  	I also had to search this up*/
+    background-position: 200% center;
+  }
+}
+
+
+h2{
+
+	font-size: 40px;
+	font-family: LEMON MILK;
+	margin-left: 40px;
+	color: #480ca8;
+	text-align: center;
+
+}
+
+p{
+
+	font-size: 30px;
+	font-family: LEMON MILK;
+	margin-left: 60px;
+	margin-right: 60px;
+	color: #6930c3;
+	background-color: white;
+	text-align: center;
+
+}
+
+form{
+
+	padding-left: 60px;
+	font-size: 20px;
+	font-family: LEMON MILK;
+
+}
+
+.response{
+
+	font-size: 40px;
+	font-family: LEMON MILK;
+	margin: 60px;
+	color: #6930c3;
+	background-color: white;
+	text-align: center;
+
+}
+
+
+/*we used table data to align the forms because we needed
+four in the same row for aesthetics*/
+.hell{
+
+	border: none;
+	padding-left: 85px;
+	padding-right: 85px;
+
+}
+
+.heav{
+
+	border: none;
+	padding-left: 60px;
+	padding-right: 60px;
+
+}
+
+.oof{
+
+	border: none;
+	padding-left: 73px;
+	padding-right: 73px;
+
+}
+
+.blo{
+
+	border: none;
+	padding-left: 78px;
+	padding-right: 78px;
+
+}
+
+.ugh{
+
+	border: none;
+	padding-left: 35px;
+	padding-right: 35px;
+
+}
+
+
+.fin{
+
+	border: none;
+	padding-left: 45px;
+	padding-right: 45px;
+
+}
+
+
+
+li a{
+
+	color: white;
+	font-size: 30px;
+}
+
+
+ul{
+
+	text-align: center;
+	
+	list-style-type: none;
+}
+
+
+.dropdown-content{
+	font-size: 15px;
+	display: none;
+	padding: 0;
+	margin: 1;
+	color: black;
+}
+
+
+.dropdown:hover{
+	background-color: rgba(243, 114, 44,.4);
+
+}
+
+.dropdown{
+
+	color: white;
+ 	font-family: LEMON MILK;
+ 	text-align: center;
+ 	font-size: 20px;
+ 	line-height: 35px;
+}
+
+.dropdown:hover .dropdown-content{
+	display: block;
+	font-family: LEMON MILK;
+	color: white;
+	line-height: 35px;	
+
+}
+
+.cite{
+
+	position: relative;
+  	left: 0;
+  	bottom: 0;
+  	width: 97%;
+  	text-align: center;
+  	padding: none;
+  	margin: none;
+  	list-style-type: none;
+}

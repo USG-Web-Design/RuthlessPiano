@@ -1,0 +1,427 @@
+/*navigation stuff*/
+
+.navi{
+
+	background-color: #457b9d;
+	font-size: 30px;
+	margin: 0px;
+	padding : 5px;
+	font-family: Korolev;
+	text-align: center;
+
+}
+
+/*anchors for navigation style (color white, no underline, etc)*/
+.navi a{
+
+	color: #f2cc8f;
+	text-decoration: none;
+	padding: 8.2%;
+	text-align: center;
+
+}
+
+.nav{
+	border: solid;
+	border-color: #f2cc8f;
+	width: 450px;
+	height: 40px;
+	font-size: 30px;
+	display: inline-table;
+	margin: 5px;
+}
+
+.nav2{
+	border: solid;
+	border-color: #f2cc8f;
+	width: 350px;
+	height: 40px;
+	font-size: 30px;
+	display: inline-table;
+}
+
+
+
+
+
+
+
+
+/* from here its homepage stuff */
+/*this defines the homepage color*/
+
+.home{
+
+	background-color: #1d3557;
+
+}
+
+/*for the pictures on the left, they use LP and the number they correspond to
+This allows for me to change the image if you hover over it as a transition
+because it's linked to a blank anchor with a image as the background
+
+TRANSITION*/
+.lp1{
+
+	float: left;
+ 	width: 19%;
+ 	margin-left: 35px;
+ 	padding: 15px;
+ 	line-height: 19.3px;
+
+ 	background-image:url("mememe.jpeg");
+  	background-size: 100%;
+  	transition: background-image 2s;
+  	animation-name: hoverrr;
+  	animation-duration: 3s;
+  	animation-iteration-count: 100;
+
+
+}
+.lp1:hover{
+
+	background-image: url(abtmeSCR.png);
+}
+
+.lp2{
+
+	float: left;
+ 	width: 19%;
+ 	margin-left: 35px;
+ 	padding: 15px;
+ 	line-height: 19.3px;
+
+ 	background-image:url("mbfly.jpeg");
+  	background-size: 100%;
+  	transition: background-image 2s;
+  	animation-name: hoverrr;
+  	animation-duration: 3s;
+  	animation-iteration-count: 100;
+
+
+}
+.lp2:hover{
+
+	background-image: url(mbflySCR.png);
+}
+
+.lp3{
+
+	float: left;
+ 	width: 19%;
+ 	margin-left: 35px;
+ 	padding: 15px;
+ 	line-height: 19.3px;
+
+ 	background-image:url("supring.jpeg");
+  	background-size: 100%;
+  	transition: background-image 2s;
+  	animation-name: hoverrr;
+  	animation-duration: 3s;
+  	animation-iteration-count: 100;
+
+
+}
+.lp3:hover{
+
+	background-image: url(supringSCR.png);
+}
+
+/*for the pictures on the right, they use RP and the number they correspond to
+This allows for me to change the image if you hover over it as a transition
+because it's linked to a blank anchor with a image as the background*/
+.rp1{
+
+	float: right;
+ 	width: 19%;
+ 	margin-right: 35px;
+ 	padding: 15px;
+ 	line-height: 19.3px;
+
+ 	background-image:url("jelly.png");
+  	background-size: 100%;
+  	transition: background-image 2s;
+  	animation-name: hoverrr;
+  	animation-duration: 3s;
+  	animation-iteration-count: 100;
+
+
+}
+.rp1:hover{
+
+	background-image: url(jellySCr.png);
+}
+
+.rp2{
+
+	float: right;
+ 	width: 19%;
+ 	margin-right: 35px;
+ 	padding: 15px;
+ 	line-height: 19.3px;
+
+ 	background-image:url("fuhnaf.jpeg");
+  	background-size: 100%;
+  	transition: background-image 2s;
+  	animation-name: hoverrr;
+  	animation-duration: 3s;
+  	animation-iteration-count: 100;
+
+
+}
+.rp2:hover{
+
+	background-image: url(fuhnafSCR.png);
+}
+
+.rp3{
+
+	float: right;
+ 	width: 19%;
+ 	margin-right: 35px;
+ 	padding: 15px;
+ 	line-height: 19.3px;
+
+ 	background-image:url("bzfd.jpeg");
+  	background-size: 100%;
+  	transition: background-image 2s;
+  	animation-name: hoverrr;
+  	animation-duration: 3s;
+  	animation-iteration-count: 100;
+
+
+}
+.rp3:hover{
+
+	background-image: url(bzfdSCR.png);
+}
+
+
+/*this makes a border with a line on the edge for text*/
+.block1{
+
+	background-color: rgba(255, 255, 255, .13);
+	border-left: solid;
+	border-left-widx: 10px;
+	border-color: rgba(255,255,255,.7);
+	padding: 20px;
+	margin: 50px;
+	text-align: left;
+	font-family: Franklin Gothic Medium;
+	color: white;
+	font-size: 20px;
+	line-height: 40px
+}
+
+.block2{
+
+	background-color: rgba(255, 255, 255, .13);
+	border-right: solid;
+	border-right-widx: 10px;
+	border-color: rgba(255,255,255,.7);
+	padding: 20px;
+	margin: 50px;
+	margin-left: 350px;
+	margin-top: 40px;
+	text-align: left;
+	font-family: Franklin Gothic Medium;
+	color: white;
+	font-size: 20px;
+	line-height: 53px
+}
+
+.block3{
+
+	background-color: rgba(255, 255, 255, .13);
+	border-left: solid;
+	border-left-widx: 10px;
+	border-color: rgba(255,255,255,.7);
+	padding: 20px;
+	margin: 50px;
+	margin-right: 350px;
+	text-align: left;
+	font-family: Franklin Gothic Medium;
+	color: white;
+	font-size: 20px;
+	line-height: 53px;
+}
+
+.block4{
+
+	background-color: rgba(255, 255, 255, .13);
+	border-right: solid;
+	border-right-widx: 10px;
+	border-color: rgba(255,255,255,.7);
+	padding: 20px;
+	margin: 50px;
+	text-align: left;
+	font-family: Franklin Gothic Medium;
+	color: white;
+	font-size: 20px;
+	line-height: 40px
+}
+
+
+/*animation + keyframes for header*/
+.a1{
+
+	position: relative;
+  	display: block;
+  	color: white;
+  	font-family: Infinite Energy;
+  	letter-spacing: 9px;
+  	padding-left: 50px;
+
+	animation-name: a1;
+ 	animation-timing-function: linear;
+  	animation-duration: 6s;
+  	animation-iteration-count: infinite;
+
+}
+
+@keyframes a1 {
+  0% {color: white;}
+  50% {color: #1d3557;}
+  100% {color: white;}
+}
+
+a{
+
+	text-decoration: none;
+	color: white;
+}
+
+
+
+
+
+
+
+/*this is for everything in the past projects' page*/
+
+
+.pp{
+
+	background-color: #a8dadc;
+
+}
+
+.h{
+
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 150px;
+	align-self: center;
+
+}
+
+
+/*ENCRYPTION*/
+.encr{
+
+	background-color: #1d3557;
+
+}
+
+.p1{
+	font-family: Korolev;
+	font-size: 30px;
+	color: white;
+}
+
+p{
+	font-family: Korolev;
+	font-size: 30px;
+	color: white;
+
+}
+
+td{
+
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+
+.animate-charcter
+{
+	/*i had to use background image because if i used background color it 
+	just wouldnt' show up
+
+	The colors are what is cycled through and the degree is how the colors
+	are being moved (left right bc its at 90 deg*/
+	background-image: linear-gradient(
+    90deg,
+    #9d0208 0%,
+    #dc2f02 29%,
+    #f48c06 67%,
+    #ffba08 100%);
+
+	background-size: 100%;
+	background-clip: border-box;
+	background-size: 200%;
+	/*I had to google this many times, but, with my testing,
+	if you dont use webkit it wouldn't clip properly. So i
+	used it for both background clip and text fill color*/
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: bloo linear;
+	animation-duration: 3s;
+	animation-iteration-count: 10000;
+	font-size: 30px;
+	display: center;
+	font-family: Galaksinos;
+	padding-left: 30px;
+
+}
+
+@keyframes bloo {
+  to {
+  	/*it's at 200 because it looks better that way.
+  	at 100, you barely notice the gradient
+
+  	I also had to search this up*/
+    background-position: 200% center;
+  }
+}
+
+
+
+
+
+
+
+
+/* dropdown stuff, mentioned before*/
+
+.dropdown-content{
+	font-size: 15px;
+	display: none;
+	
+}
+
+
+.dropdown:hover{
+	color:orange;
+
+}
+
+
+.dropdown{
+
+	color: #f2cc8f;
+ 	font-size: 30px;
+	padding-left: -330px;
+	font-family: Korolev;
+	text-align: left;
+
+}
+
+.dropdown:hover .dropdown-content{
+	display: inline;
+	font-family: Korolev;
+	color: #f2cc8f;
+ 	font-size: 30px;
+	line-height: 35px;	
+
+}

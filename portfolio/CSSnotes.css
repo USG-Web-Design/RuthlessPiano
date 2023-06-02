@@ -1,0 +1,54 @@
+/*this sets the entire webpage's background color black and a base for all the style unless i change them specifically*/
+body {
+	font-family: American Typewriter;
+	color: #8787b0;
+	background-color: black;
+	font-size: 35px;
+}
+
+/*for all p, the color is different*/
+p {
+	color: #bfbeed;
+}
+
+span {
+	background-color: deeppink;
+}
+
+h1 {
+	font-family: jellyfish;
+	font-size: 150px;
+	text-align: center;
+}
+
+h2 {
+	font-size: 50px;
+	color: #a969a2;
+}
+
+div {
+
+}
+
+/*here is the classes we learned how to make and a different style for each*/
+.Int1 {
+	font-family: orange juice;
+	color: ##bfbeed;
+}
+
+.Int2 {
+	font-size: 30;
+	font-family: Menlo;
+	color: ##bfbeed;
+}
+
+.Int3 {
+
+	font-family: Cute Jellyfish;
+	color: ##bfbeed;
+}
+
+footer {
+
+	font-size: 15px;
+}

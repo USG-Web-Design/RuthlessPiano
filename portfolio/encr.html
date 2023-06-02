@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Encryption!</title>
+	<!-- links to same css-->
+	<link rel="stylesheet" type="text/css" href="port.css">
+</head>
+<body class="encr">
+
+<!--navi bar -->
+	<div class= "navi">
+
+	<table>
+
+		<tr>
+			<th class = "nav">
+				<a href="./homeP.html"> Home </a>
+			</th>
+			<th class = "nav">
+				<a href="./encr.html"> Encryption </a>
+			</th>
+			<th class = "nav">
+				<a href="./pp.html"> Past Projects </a>
+		</tr>
+
+	</table>
+
+	</div>
+	<br><br>
+
+	<!-- new animation type (just color gradient)-->
+
+	<div class="animate-charcter"> Timeline of Encryption</div>
+
+	<!-- made a transparent image on canva and threw it in here -->
+
+	<img src="arrow.png" style="float: left; margin-left: 0px;">
+	<br><br><br><br>
+
+	<!-- hover stuff. if you hover over the time, the rest (content) will display. code in css-->
+
+	<div class="dropdown">
+		Circa 60 BC: 
+		<span class="dropdown-content">Julius Caesar invents a cypher that shifts characters by a few places down in the alphabet. For example, a to b, b to c, and so on. It's a very simple shift yet still took the people at the time a long time to decypher it.</span>
+
+	</div>
+
+	<br><br><br>
+	<div class="dropdown">
+		1553: 
+		<span class="dropdown-content">Giovan Battista Bellaso envisions encryption, but instead of simply shifting letters a few positions, there's an agreed upon key that the recipient knows to decode the message</span>
+
+	</div>
+
+	<br><br><br>
+	<div class="dropdown">
+		1854: 
+		<span class="dropdown-content">Charles Wheatstone invents the Playfair Cipher, which encrypts pairs of letters instead of single ones. This is similar to Bellaso's vision and like the one we talked about in class with keys</span>
+
+	</div>
+
+	<br><br><br>
+	<div class="dropdown">
+		1917: 
+		<span class="dropdown-content">Edward Hebern invents the electro-mechanical machine. The key is in a rotating disc and is the first example of a rotor machine. It encodes a substitution table that is changed every time a new character is typed and is similar to the programming of Enigma</span>
+
+	</div>
+
+	<br><br><br>
+	<div class="dropdown">
+		1918: 
+		<span class="dropdown-content">Arthur Scherbius invents the Enigma machine, but it uses several rotors instead of Hebern's one. Throughout WWII, Germans used Enigma to send encrypted messages</span>
+
+	</div>
+
+	<br><br><br>
+	<div class="dropdown">
+		1932: 
+		<span class="dropdown-content">Marian Rejewski discovered how Enigma works. This allows mathematicians and cryptographers such as Alan Turing to decode Enigma in 1940 which lead to Turing's Bombe Machine</span>
+
+	</div>
+
+	<br><br><br>
+	<div class="dropdown">
+		1945: 
+		<span class="dropdown-content">Claude E. Shannon of Bell Labs published an article called "A mathematical theory of cryptography." It's the starting point of modern cryptography.
+
+</span>
+
+	</div>
+	<br><br><br><br><br><br><br><br>
+
+<p style="padding-left: 70px" class="p1">This is only a small glimpse into the history of cryptography. To learn more, visit <a href="https://en.wikipedia.org/wiki/History_of_cryptography" style="text-decoration: underline;">this website</a></p>
+
+	
+<div class="block1">
+	<h2>Examples of Cryptography</h2>
+	<ul>
+		<li>Bitcoin: uses public key encryption</li>
+		<li>Digital Signatures: uses public key encryption</li>
+		<li>US Gov. Classified Info: uses single key encryption</li>
+
+	</ul>
+	
+
+</div>
+
+<!-- a more complex java function of an object. has a range input slider, and two buttons. the first button
+remembers your shift amount and the second actually does the cypher.-->
+
+<div class="block1">
+	<h2>Caesar Cypher</h2>
+
+	<p style="font-size: 20px;">You example string is: HELLO</p>
+	<input type="range" name="CC" min="0" max="5" id="CC">
+	<label for="CC">Shift Amount (0-5)</label>
+	<br>
+	<input type="button" name="submit" id="submit" value="Enter" onclick="getShiftNum();">
+	<p>Your shift amount is : <span id = "helpme"></span></p>
+	<input type="button" name="submit" id="submit" value="Confirm Shift" onclick="runD();">
+	<!--empty span element with id to throw the final answer in. -->
+	<p>Your encrypted word is : <span id = "help2"></span></p>
+
+</div>
+
+
+
+<!-- just a simple form.
+type is radio (choose)
+name is Q1-4 so you can only choose one with the same name
+id determines if it's right or wrong -->
+<div class="block4">
+	<form>
+
+
+		<table>
+			<p>When was Enigma widely used by Germany?</p>
+			<tr>
+			<td>
+				<input type="radio" name="Q1" id="1N1">
+				<label for="Y1">1918</label>
+			</td>
+
+			<td>
+				<input type="radio" name="Q1" id="1Y">
+				<label for="Y1">1939</label>
+			</td>
+
+			<td>
+				<input type="radio" name="Q1" id="1N2">
+				<label for="Y1">1950</label>
+			</td>
+
+			<td>
+				<input type="radio" name="Q1" id="1N3">
+				<label for="Y1">1917</label>
+			</td>
+			</tr>
+			
+		</table>
+
+		<table>
+			<p>Who first used cryptography (acc to my timeline)?</p>
+			<tr>
+			<td>
+				<input type="radio" name="Q2" id="2N1">
+				<label for="Y1">Alan Turing</label>
+			</td>
+
+			<td>
+				<input type="radio" name="Q2" id="2N2">
+				<label for="Y1">Charles Wheatstone</label>
+			</td>
+
+			<td>
+				<input type="radio" name="Q2" id="2Y">
+				<label for="Y1">Julius Caesar</label>
+			</td>
+
+			<td>
+				<input type="radio" name="Q2" id="2N3">
+				<label for="Y1">Germany</label>
+			</td>
+			</tr>
+			
+		</table>
+
+
+		<table>
+			<p>What did Alan Turing do?</p>
+			<tr>
+			<td>
+				<input type="radio" name="Q3" id="3Y">
+				<label for="Y1">He cracked Enigma</label>
+			</td>
+
+			<td>
+				<input type="radio" name="Q3" id="3N1">
+				<label for="Y1">He invented Enigma</label>
+			</td>
+
+			<td>
+				<input type="radio" name="Q3" id="3N2">
+				<label for="Y1">He invented modern cryptography</label>
+			</td>
+
+			<td>
+				<input type="radio" name="Q3" id="3N3">
+				<label for="Y1">He invented using rotor discs as the key</label>
+			</td>
+			</tr>
+			
+		</table>
+
+
+		<table>
+			<p>What's the difference between Enigma and Hebern's machine?</p>
+			<tr>
+			<td>
+				<input type="radio" name="Q4" id="4N1">
+				<label for="Y1">Hebern's machine has multiple rotors</label>
+			</td>
+
+			<td>
+				<input type="radio" name="Q4" id="4N2">
+				<label for="Y1">Enigma inspired Hebern's machine</label>
+			</td>
+
+			<td>
+				<input type="radio" name="Q4" id="4N3">
+				<label for="Y1">It has a rotor key</label>
+			</td>
+
+			<td>
+				<input type="radio" name="Q4" id="4Y">
+				<label for="Y1">Enigma has multiple rotors</label>
+			</td>
+			</tr>
+			
+		</table>
+
+		<input type="button" name="Submit" value="Enter" onclick="score();">
+	</form>
+
+
+<!-- same as before. -->
+	<p id="score"></p>
+</div>
+
+
+
+
+
+<div class="block1">
+	
+	<h2>Citations</h2>
+	<a href="https://www.thalesgroup.com/en/markets/digital-identity-and-security/magazine/brief-history-encryption">History of Encryption</a>
+	<br>
+	<a href="https://www.techtarget.com/searchsecurity/definition/cryptography">Examples of Encryption</a>
+</div>
+
+
+</body>
+
+<!--java -->
+<script type="text/javascript">
+
+	window.alert("Welcome to the hell page")
+	
+
+//score function for the quiz. adds one point for every correct answer.
+	function score(){
+		var OG = 0;
+		var respondre = "";
+
+		if (document.getElementById("1Y").checked){
+
+			OG = OG + 1;
+		}
+
+		if (document.getElementById("2Y").checked){
+
+			OG = OG + 1;
+		}
+
+		if (document.getElementById("3Y").checked){
+
+			OG = OG + 1;
+		}
+
+		if (document.getElementById("4Y").checked){
+
+			OG = OG + 1;
+		}
+
+
+		var respondre = "Your score is: " + OG + "/4";
+
+		document.getElementById("score").innerHTML = respondre;
+
+	};
+
+
+
+
+
+
+
+
+
+	//<div class="block1">
+	//<h2>Caesar Cypher</h2>
+
+	//<p style="font-size: 20px;">You example string is: THE FAULT IN OUR STARS</p>
+	//<input type="range" name="CC" min="0" max="10" id="CC">
+	//<label for="CC">Shift Amount (0-10)</label>
+	//<br>
+	//<input type="button" name="submit" id="submit" value="Enter" onclick="getValue();">
+	//<p>Your shift amount is : <span id = "helpme"></span></p>
+
+	//</div>
+
+
+//my object. constructor takes in S and stores it as this.shift
+
+	class CYPH{
+
+		constructor(s){
+
+			this.shift = s;
+
+		}
+
+//function that gets the shift amount and stores it as this.shift again. used in func runD
+		getValue(){
+
+			var shiftNum = document.getElementById("CC").value;
+
+			this.shift = shiftNum;
+
+			return this.shift;
+		}
+
+
+	};
+
+//makes sure shiftNum is CC (prev updated) and makes a new object that takes in the S as shiftNum
+	var shiftNum = document.getElementById("CC").value;
+	const newCyph = new CYPH(shiftNum);
+
+
+//inserts your shift amount in html
+	function getShiftNum(){
+
+		document.getElementById("helpme").innerHTML = newCyph.getValue();
+	}
+
+
+//function that actually replaces the word HELLO with different words based on the object.getValue value.
+	function runD(){
+	var word = "HELLO";
+
+	if (newCyph.getValue() == 0){
+
+		word = "HELLO";
+	}
+	if (newCyph.getValue() == 1){
+
+		word = "IFMMP";
+	}
+	if (newCyph.getValue() == 2){
+
+		word = "JGNNQ";
+	}
+	if (newCyph.getValue() == 3){
+
+		word = "KHOOR";
+	}
+	if (newCyph.getValue() == 4){
+
+		word = "LIPPS";
+	}
+	else if (newCyph.getValue() == 5){
+
+		word = "MJQQT";
+	}
+
+	document.getElementById("help2").innerHTML = word;
+
+	}
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</html>

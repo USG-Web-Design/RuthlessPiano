@@ -1,0 +1,112 @@
+/* comments */
+
+body{
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-size: 30px;
+	font-family: B612;
+}
+
+/*defines the style for some basic elements */
+
+h1{
+	font-size: 70px;
+	background-color: #c2c2d6;
+	margin: 0;
+	padding: 0;
+	font-family: Butterflyfree;
+}
+h2{
+	color: white;
+}
+
+p{
+	font-size: 30px;
+	color: ghostwhite
+}
+
+/* this is a class,which uses .[name] and i defined the text color*/
+
+.first{
+	color: ghostwhite;
+}
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* here, when you hover over the list, the background color of it will change*/
+
+}
+li:hover{
+	background-color: #9494b8;
+}
+
+
+/* color error here but it works so I won't change it*/
+li{
+	color: f0f0f5;
+	padding: 10px;
+	background-color: #52527a;
+	font-family: Saker Sans Medium PERSONAL USE;
+	font-size: 35px;
+}
+
+
+/* here's the dropdown stuff. dropdown is the big div that includes everyrthing,
+including dropdown content. dropdown content has a display of none, and when you
+hover over dropdown, the dropdown content will show.*/
+
+.dropdown-content{
+	font-size: 15px;
+	display: none;
+	padding: 0;
+	margin: 1;
+}
+
+.dropdown-content2{
+	font-size: 30px;
+	display: none;
+	padding: 0;
+	margin: 1;
+}
+
+.dropdown{
+	color: #f0f0f5;
+
+}
+
+.dropdown:hover{
+	background-color: #7575a3;
+
+}
+
+.dropdown:hover .dropdown-content{
+	display: block;
+	font-family: B612;
+	
+
+}
+
+.dropdown:hover .dropdown-content2{
+	display: block;
+}
+
+
+
+
+
+.intro{
+	border: groove;
+	border-color: #a3a3c2;
+	border-width: 10px;
+}
+
+.endanger{
+	border: inset;
+	border-color: #d1d1e0;
+	border-width: 10px;
+}
